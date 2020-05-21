@@ -5,28 +5,66 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding: 0px;
     }
-    h3 {
-      color: darkblue;
+    .option {
+      width: 400px;
+      height: 400px;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+      background-color: white;
+      cursor: pointer;
+      box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    .option div {
+      width: 400px;
+      height: 300px;
+      line-height: 300px;
+      background-color: white;
+    }
+    .option img {
+      width: auto;
+      height: auto;
+      max-height: 100%;
+      max-width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .option p {
+      display: table-cell;
+      vertical-align: middle;
+      width: 400px;
+      height: 100px;
+      font-size: xx-large;
+      text-align: center;
+      padding: 0;
+      margin: 0;
     }
   </style>
 </html>
 <body>
-<h3>Web Component Examples</h3>
-<hr>
+<div style="font-size: xx-large; padding: 10px; background-color: darkblue; color: white;">Web Component Examples</div>
 
-<p>
-  Below are links to a number of example web components I have been working on.
-  <br>
-  You can find all the code in the <a href="https://github.com/StephenHassall/zebra-blue">zebra-blue</a> GitHub repository.
-</p>
+<div style="margin: 10px;">
 
-<p><a href="digitalClock.html">Digital Clock</a></p>
+  <p>
+    Below are links to examples of web components I have been working on.
+    <br>
+    You can find all the code in the <a href="https://github.com/StephenHassall/zebra-blue">zebra-blue</a> GitHub repository.
+  </p>
 
-<p><a href="dayCalendar.html">Day Calendar</a></p>
+  <a href="fractalDemo.html"><div class="option"><div><img src="fractal.png"></div><p>Fractal Demo</p></div></a>
 
-<p><a href="calendar.html">Calendar</a></p>
+  <a href="digitalClock.html"><div class="option"><div><img src="digitalClock.png"></div><p>Digital Clock</p></div></a>
+  
+  <a href="analogueClock.html"><div class="option"><div><img src="analogueClock.png"></div><p>Analogue Clock</p></div></a>
 
-<p><a href="fractalDemo.html">Fractal Demo</a></p>
+  <a href="dayCalendar.html"><div class="option"><div><img src="dayCalendar.png"></div><p>Day Calendar</p></div></a>
+
+  <a href="calendar.html"><div class="option"><div><img src="calendar.png"></div><p>Calendar</p></div></a>
+
+</div>
 
 </body>
